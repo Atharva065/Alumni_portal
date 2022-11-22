@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c139fd2.css",
+    "main.js": "/static/js/main.880b0629.js",
+    "static/media/7.jpg": "/static/media/7.246a0d52087cf5b21ea1.jpg",
+    "static/media/4.jpg": "/static/media/4.15d1a291dd1590aba160.jpg",
+    "static/media/6.jpg": "/static/media/6.f89d0c070ee9a97d5052.jpg",
+    "static/media/LogoRSCOE.png": "/static/media/LogoRSCOE.605c13fc33b8f7d46fa1.png",
+    "static/media/1.jpg": "/static/media/1.2659a72d7d43915e5424.jpg",
+    "static/media/2.jpg": "/static/media/2.c003ef4f46729d16f75d.jpg",
+    "static/media/5.jpg": "/static/media/5.c003ef4f46729d16f75d.jpg",
+    "static/media/3.jpg": "/static/media/3.d091fadf1b98807e85a2.jpg",
+    "static/media/User.png": "/static/media/User.5cba62977d4dbefba792.png",
+    "index.html": "/index.html",
+    "static/media/LogoAlumniTalk.svg": "/static/media/LogoAlumniTalk.38976633998ecd3ddd0b0c5a02fdb6b6.svg",
+    "static/media/LogoFeed.svg": "/static/media/LogoFeed.222621c264e9ce5edb1f8bc92e9858c7.svg",
+    "static/media/LogoEvents.svg": "/static/media/LogoEvents.0249b1349c41c704494f9f51c9d32555.svg",
+    "static/media/LogoFindAlumni.svg": "/static/media/LogoFindAlumni.6ef343ef25cef4f8dc715c07971089a1.svg",
+    "static/media/LogoAboutUs.svg": "/static/media/LogoAboutUs.5c32c7b9a3ff84873eb144a2204f7320.svg",
+    "static/media/LogoHome.svg": "/static/media/LogoHome.1d42be824588d4be32b6d9732eb78a65.svg",
+    "main.9c139fd2.css.map": "/static/css/main.9c139fd2.css.map",
+    "main.880b0629.js.map": "/static/js/main.880b0629.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c139fd2.css",
+    "static/js/main.880b0629.js"
+  ]
+}

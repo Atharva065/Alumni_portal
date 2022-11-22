@@ -1,0 +1,31 @@
+.main-talk-div {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+
+  padding: 1rem;
+}
+
+.main-talk-div > h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+}
+.alumni-talk-video {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  height: fit-content;
+}
+.alumni-talk > iframe {
+  margin: 2rem;
+  width: 550px;
+  height: 315px;
+}
+
+@media only screen and (max-width: 600px) {
+  .alumni-talk > iframe {
+    margin: 1rem auto;
+    width: 300px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.feed-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7rem;
+  font-family: "Montserrat";
+}
+
+.all-posts {
+  width: 100%;
+}
+
+.new-post {
+  width: 80%;
+  padding: 1.5rem 2rem;
+  margin: 0.5rem;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 50px rgba(202, 241, 248, 0.75);
+  border-radius: 4px;
+}
+
+.new-post > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+
+  color: #181818;
+}
+
+.new-post > hr {
+  width: 100%;
+  border: 1px solid #caf1f8;
+  margin: 0.7rem 0;
+}
+
+.new-post > button {
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+
+  color: rgba(24, 24, 24, 0.2);
+
+  width: 100%;
+  border: none;
+
+  padding: 0.7em;
+
+  border-radius: 4px;
+
+  transition: all 0.3s;
+  /* box-shadow: rgba(235, 224, 224, 0.952) 0px 2px 4px 0px inset; */
+  box-shadow: 0px 0px 25px rgba(202, 241, 248, 0.5);
+}
+
+.all-posts > hr {
+  width: 90%;
+  border: 1px solid #e7e7e7;
+  margin: 2rem 0;
+}
+
+.post {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(202, 241, 248, 0.5);
+  border-radius: 4px;
+  width: 80%;
+  padding: 1.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.who-posting {
+  display: flex;
+}
+
+.who-posting-info {
+  line-height: 2;
+  padding: 0 0.7rem;
+}
+.who-posting > img {
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+}
+
+.who-posting-info > h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+
+  color: #181818;
+}
+
+.who-posting-info > p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+
+  color: #181818;
+}
+
+.post > p {
+  padding: 1rem 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+
+  color: #181818;
+}
+
+.post > img {
+  width: 100%;
+}
+
+.user-profile {
+  /* position: absolute; */
+  /* width: 290px; */
+
+  width: 40%;
+  height: 280px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(202, 241, 248, 0.5);
+  border-radius: 4px;
+}
+
+/* .user-profile > img {
+  width: 100%;
+}
+
+.profile-info > img {
+  width: 40%;
+  margin: auto;
+} */
+
+.feed-container {
+  position: relative;
+  background: white;
+  width: 21vw;
+  margin: auto;
+  padding-bottom: 2.5vw;
+}
+
+.ProfBackImg {
+  width: 100%;
+  height: 9vw;
+  margin-bottom: 4.2vw;
+}
+
+.ProfileImg {
+  width: 7.5vw;
+  height: 7.5vw;
+  border-radius: 50%;
+  padding: 0.45vw;
+  background: white;
+  position: absolute;
+  top: 5.25vw;
+  left: 6.75vw;
+  margin: 0vw auto;
+}
+
+.feed-container div {
+  font-weight: 700;
+  color: black;
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+.feed-container p {
+  font-weight: 300;
+  font-size: 0.78vw;
+  color: rgba(24, 24, 24, 1);
+  text-align: center;
+  margin: 0.7vw 2.5vw 0vw 2.5vw;
+}
+
+.post-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post-file button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.post-file button span {
+  display: block;
+  /* margin-left: 0.3em; */
+  transition: all 0.3s ease-in-out;
+}
+
+.post-file button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-file button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.post-file button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.post-file button:hover span {
+  transform: translateX(5em);
+}
+
+.post-file button:active {
+  transform: scale(0.95);
+}
+
+.pagination-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta {
+  position: relative;
+
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1025px) {
+  .user-profile {
+    display: none;
+  }
+  .feed-main {
+    margin: 1rem 2rem;
+  }
+  .post {
+    margin: 0;
+    width: 90%;
+  }
+  .new-post {
+    width: 90%;
+  }
+  .all-posts > hr {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .user-profile {
+    display: none;
+  }
+  .feed-main {
+    margin: 1rem;
+  }
+  .post {
+    width: 100%;
+    margin: 0;
+  }
+  .new-post {
+    width: 100%;
+    margin: 0;
+  }
+  .all-posts > hr {
+    width: 100%;
+  }
+  .post-file button {
+    margin: 1rem 0;
+    padding: 0.5em 0.7em;
+  }
+}

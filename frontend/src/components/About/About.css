@@ -1,0 +1,68 @@
+.AboutHead{
+  font-size: 3.2vw;
+  font-weight: 600;
+  /* background: rgb(244, 249, 255); */
+  padding: 5vw 5vw 0vw 5vw;
+}
+.AboutHeadText{
+  /* background: rgb(244, 249, 255); */
+  font-size: 1.2vw;
+  font-weight: 400;
+  padding: 1.5vw 5vw 0vw 5vw;
+  text-align: justify;
+}
+.VisionOut{
+  margin: 2.5vw 5vw 0vw 5vw;
+  background: white;
+  border-radius: 0.3vw;
+  padding: 2vw 3vw;
+  box-shadow: 0vw 0.8vw 5vw rgba(202, 241, 248, 0.75);
+}
+.VisionOut h2{
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(14, 103, 149, 1);
+}
+.VisionOut p{
+  font-size: 1.2vw;
+  margin-top: 1.5vw;
+  text-align: center;
+}
+.AwardsHead{
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding: 6vw 5vw 4vw 5vw;
+}
+.AwardsOut{
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 0vw auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5vw;
+}
+.AwardsCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vw;
+  background: white;
+  width: 48.8%;
+  border-radius: 0.3vw;
+  box-shadow: 0vw 0vw 2.5vw rgba(202, 241, 248, 0.5);
+  margin-bottom: 2vw;
+}
+.AwardsCard img{
+  width: 100%;
+  height: 23vw;
+}
+.AwardsCard p{
+  font-size: 1.6vw;
+  font-weight: 700;
+  margin-top: 1.5vw;
+  text-align: center;
+}

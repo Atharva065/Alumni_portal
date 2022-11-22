@@ -1,0 +1,94 @@
+.signin form {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signin-component {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 18rem;
+	justify-content: space-evenly;
+}
+.signin-headding {
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid rgb(101, 99, 99);
+	margin-bottom: 1rem;
+}
+.signin-email p {
+	padding: 0.5rem 0rem;
+}
+
+.signin-email input {
+	padding: 0.8rem 0.5rem;
+	border: none;
+	background: #ffffff;
+	border: 1px solid #8692a6;
+	box-shadow: 0px 0px 25px rgba(202, 241, 248, 0.5);
+	border-radius: 0.3rem;
+	outline: none;
+	width: 100%;
+}
+.signin-password p {
+	padding: 0.5rem 0rem;
+}
+.signin-password input {
+	padding: 0.8rem 0.5rem;
+	border: none;
+	background: #ffffff;
+	border: 1px solid #8692a6;
+	border-radius: 0.3rem;
+	outline: none;
+	width: 100%;
+}
+
+.signin-button {
+	margin-top: 2rem;
+}
+.signin-button p {
+	margin-bottom: 0.5rem;
+	color: rgb(57, 57, 247);
+	cursor: pointer;
+}
+.signin-button button {
+	width: 100%;
+	display: inline-block;
+	border-radius: 4px;
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1rem;
+	/* padding: 0.8rem; */
+	width: 100%;
+	transition: all 0.5s;
+	cursor: pointer;
+	/* margin: 5px; */
+}
+
+.signin-button button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.signin-button button span:after {
+	content: "»";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -15px;
+	transition: 0.5s;
+}
+
+.signin-button button:hover span {
+	padding-right: 15px;
+}
+
+.signin-button button:hover span:after {
+	opacity: 1;
+	right: 0;
+}

@@ -1,0 +1,75 @@
+.forget-password-main {
+  text-align: center;
+}
+
+.forget-password {
+  width: 50%;
+  line-height: 2;
+  margin: 7rem auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem;
+}
+
+.forget-password h1 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.forget-password p {
+  text-align: start;
+  margin-left: 4rem;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.forget-password input {
+  width: 80%;
+
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+.forget-password input:focus {
+  outline: none;
+}
+
+.forget-password button {
+  width: 80%;
+
+  padding: 1rem;
+  color: white;
+  background-color: #0e6795;
+  outline: none;
+
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.forget-password button:hover {
+  background-color: #2e7d32;
+}
+
+@media only screen and (max-width: 600px) {
+  .forget-password {
+    width: 85%;
+    line-height: 1.5;
+  }
+  .forget-password p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .forget-password h1 {
+    text-align: start;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .forget-password input {
+    width: 100%;
+  }
+
+  .forget-password button {
+    padding: 0.3rem;
+  }
+}

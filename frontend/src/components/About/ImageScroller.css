@@ -1,0 +1,107 @@
+.ImageScroller{
+    position: relative;
+    /* border: 1px solid red; */
+    height: 35vw;
+    width: 80vw;
+
+    margin: 120px auto 0vw auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #080216;
+    /* background: white; */
+    /* box-shadow: 1px 1px 5px black; */
+  }
+  
+  /* .sliderFrame{
+    border: 1px solid green;
+    position: absolute;
+    top: 0vw;
+    left: 15vw;
+    height: 39vw;
+    width: 80vw;
+  } */
+  
+  .container {
+    /* border: 1px solid blue; */
+    /* width: 70vw; */
+    height: 39vw;
+    /* margin: 120px auto 0vw auto; */
+    /* height: 40vw; */
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    /* transform: translateX(-50%); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+  
+  .sliderImgs {
+    width: 80vw;
+    height: 39vw;
+    transition: 1s ease;
+    /* filter: blur(2px); */
+    opacity: 100%;
+    transform: rotate3d(0, 0, 0, 30deg);
+  }
+  
+  #sliderImgSmall{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* transform: translateZ(-50%); */
+    width: 90%;
+    height: 90%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5), -1px -1px 15px rgba(0, 0, 0, 0.5);
+    transition: 1s ease;
+  }
+  
+  .prevNextBtn{
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    border: none;
+    outline: none;
+    position: absolute;
+    /* padding: 10px; */
+    height: 40px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    /* opacity: 20%; */
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2), -1px -1px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+  
+  .prevNextBtn:active{
+    filter: blur(1px);
+  }
+  
+  .prevNextBtn:hover{
+    background: white;
+    /* opacity: 100%; */
+  }
+  
+  .prevBtn{
+    left: 0px;
+    top: 50%;
+    /* padding: 10px 12px 10px 5px; */
+    padding-right: 9px;
+    border-radius: 0px 25px 25px 0px;
+  }
+  
+  .nextBtn{
+    right: 0px;
+    top: 50%;
+    padding-left: 9px;
+    /* padding: 10px 5px 10px 12px; */
+    border-radius: 25px 0px 0px 25px;
+  }

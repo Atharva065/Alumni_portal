@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.explore-heading {
+  margin: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.explore-heading h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-explore {
+  font-family: "Montserrat";
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly;
+  line-height: 1.7;
+}
+
+.explore-links {
+  margin: 1rem 0 3.5rem 0;
+}
+.explore-links a {
+  text-decoration: none;
+  color: #02023d;
+  cursor: pointer;
+}
+
+.explore-links a h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.explore-links a p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* @media (min-width: 600px) and (max-width: 1025px) {
+  .main-explore {
+    justify-content: space-between;
+  }
+} */
