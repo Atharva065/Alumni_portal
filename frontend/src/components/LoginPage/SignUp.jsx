@@ -16,9 +16,9 @@ const loaderCSS = css`
 
 const SignUp = () => {
   const s = useContext(userContext);
-  const [verifyotp, setVerifyotp] = useState({
-    otp: "",
-  });
+  // const [verifyotp, setVerifyotp] = useState({
+  //   otp: "",
+  // });
   const [loader, setLoader] = useState(false);
   const [visible, setVisible] = useState(false);
 
@@ -39,10 +39,10 @@ const SignUp = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          email: credentials.email,
-          otp: verifyotp.otp,
-        }),
+        // body: JSON.stringify({
+        //   email: credentials.email,
+        //   otp: verifyotp.otp,
+        // }),
         Credential: "include",
       };
       const response = await fetch(
@@ -125,10 +125,10 @@ const SignUp = () => {
         `/users`,
         requestOptions
       );
-      if (!response.ok) {
-        setLoader(false);
-        throw new Error("May be user already exits, Please login");
-      }
+      // if (!response.ok) {
+      //   setLoader(false);
+      //   throw new Error("May be user already exits, Please login");
+      // }
       // const data = await response.json();
       // localStorage.setItem("token", data.token);
       // s.changeUser(data.user);
@@ -138,7 +138,7 @@ const SignUp = () => {
       // 	position: toast.POSITION.TOP_CENTER,
       // });
       setLoader(false);
-      // history.push("/ProfilePage");
+      history.push("/ProfilePage");
     } catch (error) {
       setLoader(false);
       console.log(error);
@@ -191,7 +191,7 @@ const SignUp = () => {
             </p>
             <div className="input-fields">
               <form>
-                <label>Your firstname*</label>
+                <label>Your firstname</label>
                 <br />
                 <input
                   className="signup-input"
@@ -264,8 +264,8 @@ const SignUp = () => {
                   className="signup-button"
                   onClick={(e) => {
                     e.preventDefault();
-                    // createUser();
-                    sendOTP();
+                    createUser();
+                    // sendOTP();
                   }}
                 >
                   Register Account
@@ -287,11 +287,11 @@ const SignUp = () => {
             <ClipLoader color="#02023d" css={loaderCSS} loading={loader} />
             <ToastContainer />
             <div className="forget-password">
-              <p>Enter OTP (Check Spam folder...)</p>
+              {/* <p>Enter OTP (Check Spam folder...)</p> */}
               <form>
                 {/* <p>Enter OTP</p> */}
 
-                <input
+                {/* <input
                   required
                   name="otp"
                   placeholder="OTP"
@@ -302,7 +302,7 @@ const SignUp = () => {
                       otp: e.target.value,
                     });
                   }}
-                />
+                /> */}
                 <br />
                 <button
                   onClick={(e) => {
