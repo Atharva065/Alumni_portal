@@ -32,7 +32,7 @@ const ForgetPass = () => {
       };
       const response = await fetch(
         // "http://localhost:4000/users/forgetPassword",
-        `/users/forgetPassword`,
+        `https://git.heroku.com/lit-taiga-74506.git/users/forgetPassword`,
         requestOptions
       );
       if (!response.ok) {

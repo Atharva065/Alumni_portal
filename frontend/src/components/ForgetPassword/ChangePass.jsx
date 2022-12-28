@@ -36,7 +36,7 @@ const ChangePass = ({ ...prop }) => {
       };
       const response = await fetch(
         // "http://localhost:4000/users/me",
-        `/users/me`,
+        `https://git.heroku.com/lit-taiga-74506.git/users/me`,
         requestOptions
       );
       await response.json();
@@ -66,7 +66,7 @@ const ChangePass = ({ ...prop }) => {
       };
       const response = await fetch(
         // "http://localhost:4000/users/verifyOTP",
-        `/users/verifyOTP`,
+        `https://git.heroku.com/lit-taiga-74506.git/users/verifyOTP`,
         requestOptions
       );
       if (!response.ok) {
