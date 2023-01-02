@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
+    "build": "react-scripts build",
     "dev": "nodemon index.js"
   },
   "author": "Umesh Patel",
