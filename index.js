@@ -17,6 +17,8 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, "/frontend/build")));
 
+require("dotenv").config();
+
 // console.log(__dirname);
 
 app.use(userRouter);
@@ -35,5 +37,5 @@ app.get("/*", function (req, res) {
 });
 
 app.listen(port, () => {
-  console.log(`Server is up on port ${port}`);
+  console.log("Server is up on port ${port}");
 });
