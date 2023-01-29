@@ -9,7 +9,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-app.get('*', ()=>{
-  // send the index.html from build folder
-})
