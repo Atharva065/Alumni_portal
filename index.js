@@ -38,7 +38,7 @@ app.get("/*", function (req, res) {
 
 app.get("*", () => {
   // send the index.html from build folder
-});
+}); 
 
 app.listen(port, () => {
   console.log("Server is up on port ${port}");
