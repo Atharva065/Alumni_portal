@@ -185,13 +185,15 @@ const SignUp = () => {
             </div>
           </div>
           <div className="signup-form">
-            <h1 className="loginform-register-text">Register Account</h1>
+            <h1 className="loginform-register-text">Register As Alumni</h1>
             <p className="loginform-graduatedtext">
               {/* For those who have graduated from JSPM's RSCOE. */}
             </p>
             <div className="input-fields">
               <form>
-                <label>Your firstname</label>
+                <label>
+                  Your Firstname<span id="style">* </span>
+                </label>
                 <br />
                 <input
                   className="signup-input"
@@ -207,7 +209,9 @@ const SignUp = () => {
                   }
                 />
                 <br />
-                <label>Your lastname*</label>
+                <label>
+                  Your Lastname<span id="style">* </span>
+                </label>
                 <br />
                 <input
                   className="signup-input"
@@ -223,14 +227,16 @@ const SignUp = () => {
                   }
                 />
                 <br />
-                <label>Email address*</label>
+                <label>
+                  Email Address<span id="style">* </span>
+                </label>
                 <br />
                 <input
                   className="signup-input"
                   type="text"
                   name="email"
                   id="input-email"
-                  placeholder="Enter Email address"
+                  placeholder="Enter Email Address"
                   onChange={(e) =>
                     setCredentials({
                       ...credentials,
@@ -239,7 +245,9 @@ const SignUp = () => {
                   }
                 />
                 <br />
-                <label>Create Password*</label>
+                <label>
+                  Create Password<span id="style">* </span>
+                </label>
                 <br />
                 <input
                   className="signup-input"
@@ -254,6 +262,15 @@ const SignUp = () => {
                     })
                   }
                 />
+                <br />
+                <label>Linked In</label>
+                <br />
+                <input
+                  className="signup-input"
+                  type="text"
+                  placeholder="Enter LinkedIn URL "
+                />
+
                 <br />
                 <input type="checkbox" />
                 <label className="tc-label">
