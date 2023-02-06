@@ -33,7 +33,7 @@ const SignIn = () => {
         }),
       };
       const response = await fetch(
-        "http://localhost:5000/users/login",
+        "/users/login",
         // `/users/login`,
         requestOptions
       );
@@ -100,13 +100,15 @@ const SignIn = () => {
           <h1 className="signintext">Sign In</h1>
           <div className="input-fiels">
             <form>
-              <label>Email address*</label>
+              <label>
+                Email Address<span id="style">* </span>
+              </label>
               <br />
               <input
                 type="text"
                 name="email"
                 id="input-email"
-                placeholder="Enter email address"
+                placeholder="Enter Email Address"
                 onChange={(e) =>
                   setCredentials({
                     ...credentials,
@@ -116,7 +118,9 @@ const SignIn = () => {
                 value={credentials.email}
               />
               <br />
-              <label>Password*</label>
+              <label>
+                Password <span id="style">* </span>
+              </label>
               <br />
               <input
                 type="password"
@@ -150,7 +154,7 @@ const SignIn = () => {
 
               <p className="loginform-redirecttosignup">
                 Not registered yet?
-                <Link className="signinpage-signup-link" to="/signup">
+                <Link className="signinpage-signup-link" to="/SignUpStudent">
                   {" "}
                   Create an account
                 </Link>
