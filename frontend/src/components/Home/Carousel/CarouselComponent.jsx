@@ -46,8 +46,8 @@ const CarouselComponent = () => {
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={45}
-        totalSlides={2}
-        interval={5000}
+        totalSlides={8}
+        interval={2000}
         isPlaying={true}
         infinite={true}
       >
@@ -60,7 +60,71 @@ const CarouselComponent = () => {
               style={{ width: "100%" }}
             />
           </Slide>
+
           <Slide index={1}>
+            {" "}
+            <img
+              src="Images/1.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={2}>
+            {" "}
+            <img
+              src="Images/2.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={11}>
+            {" "}
+            <img
+              src="Images/11.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={3}>
+            {" "}
+            <img
+              src="Images/3.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={4}>
+            {" "}
+            <img
+              src="Images/4.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={6}>
+            {" "}
+            <img
+              src="Images/6.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          <Slide index={7}>
+            {" "}
+            <img
+              src="Images/7.jpg"
+              alt="Img"
+              style={{ width: "100%", height: "130%" }}
+            />
+          </Slide>
+
+          {/* <Slide index={1}>
             {" "}
             <iframe
               width="100%"
@@ -72,7 +136,7 @@ const CarouselComponent = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </Slide>
+          </Slide> */}
         </Slider>
       </CarouselProvider>
     </>
